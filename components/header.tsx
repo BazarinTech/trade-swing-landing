@@ -26,10 +26,12 @@ export function Header() {
         </nav>
 
         <div className="flex gap-3">
-          <Button variant="outline" className="hidden sm:inline-flex bg-transparent">
-            Sign In
+          <Button variant="outline" className="hidden sm:inline-flex bg-transparent" asChild>
+            <a href="https://app.trade-swing.tech">Sign In</a>
           </Button>
-          <Button className="bg-accent hover:bg-accent/90 text-foreground font-semibold">Get Started</Button>
+          <Button className="bg-accent hover:bg-accent/90 text-foreground font-semibold" asChild>
+            <a href="https://app.trade-swing.tech">Get Started</a>
+          </Button>
         </div>
       </div>
     </header>

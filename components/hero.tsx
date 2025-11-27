@@ -27,8 +27,14 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-foreground font-semibold text-base">
-                Start Trading Free <ArrowRight className="w-5 h-5 ml-2" />
+              <Button
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-foreground font-semibold text-base"
+                asChild
+              >
+                <a href="https://app.trade-swing.tech">
+                  Start Trading Free <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
               </Button>
               <Button
                 size="lg"
